@@ -45,7 +45,7 @@ main {
 main form {
   background-color: white;
   display: grid;
-  grid-template-columns: auto min-content min-content;
+  grid-template-columns: auto min-content min-content min-content;
   padding: 1rem;
   gap: .25rem;
 
@@ -68,7 +68,7 @@ form input[type=radio] {
   margin: 0;
 }
 
-form math {
+form math:first-child {
   grid-column: 1 / span 1;
   place-self: center start;
 
@@ -79,7 +79,7 @@ form math {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
 }
 
 .mediums {
