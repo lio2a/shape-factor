@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de Lentes Ideais</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <main>
+    <form id="data">
+      <h1>Singleto</h1>
+
+      <div class="lens">
+        <svg viewBox="-1.5 -1.75 3 3.5">
+          <path id="path-singlet" d="m -0.5 -1.5 a 5 5 180 0 0 0 3 h 1 a 5 5 180 0 0 0 -3 z" stroke="currentColor"
+            stroke-width="1%" fill="transparent" />
+        </svg>
+        <div class="mediums">
+          <math>
+            <mi>o</mi>
+          </math>
+          <math>
+            <mi>n</mi>
+          </math>
+          <math>
+            <mi>i</mi>
+          </math>
+        </div>
+      </div>
+
+      <div class="row">
+        <math>
+          <mi>i</mi>
+        </math>
+        <input type="radio" name="unknown" value="i">
+        <input type="number" name="i" value="100.0000" step="0.0001">
+      </div>
+
+      <div class="row">
+        <math>
+          <mi>o</mi>
+        </math>
+        <input type="radio" name="unknown" value="o">
+        <input type="number" name="o" value="200.0000" step="0.0001">
+      </div>
+
+      <div class="row">
+        <math>
+          <mi>f</mi>
+        </math>
+        <input type="radio" name="unknown" value="f" checked>
+        <input type="number" name="f" value="1.0000" step="0.0001" disabled>
+      </div>
+
+
+      <div class="row">
+        <math>
+          <mi>n</mi>
+        </math>
+        <input type="number" name="n" value="1.5168" step="0.0001">
+      </div>
+
+      <div class="row">
+        <math>
+          <mi>p</mi>
+        </math>
+        <input type="number" name="p" value="1.0000" step="0.0001" disabled>
+      </div>
+
+      <div class="row">
+        <math>
+          <mi>c</mi>
+        </math>
+        <input type="number" name="c" value="1.0000" step="0.0001" disabled>
+      </div>
+
+      <div class="row">
+        <math>
+          <msub>
+            <mi>r</mi>
+            <mn>1</mn>
+          </msub>
+        </math>
+        <input type="number" name="r1" value="1.0000" step="0.0001" disabled>
+      </div>
+
+      <div class="row">
+        <math>
+          <msub>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msub>
+        </math>
+        <input type="number" name="r2" value="1.0000" step="0.0001" disabled>
+      </div>
+    </form>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
